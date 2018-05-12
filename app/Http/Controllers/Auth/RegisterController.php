@@ -88,11 +88,6 @@ class RegisterController extends Controller
         Mail::to($thisUser['email'])->send(new verifyEmail($thisUser));
     }
 
-    public function verifyEmailFirst()
-    {
-        return view('email.verifyEmailFirst');
-    }
-
     public function sendEmailDone($email, $verifyToken)
     {
         $user = User::where(['email'=>$email, 'verifyToken'=>$verifyToken])->first();
