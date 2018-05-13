@@ -111,5 +111,5 @@
 @endsection
 
 @section('content')
-<h1> You're Login as Admin </h1>
+<h1> You're Login as User </h1>
 @endsection

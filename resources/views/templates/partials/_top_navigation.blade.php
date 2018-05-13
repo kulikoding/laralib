@@ -7,9 +7,11 @@
       </div>
 
       <ul class="nav navbar-nav navbar-right">
+      @guest
+      @else
         <li class="">
           <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <img src="{{ asset('assets/images/img.jpg') }}" alt="">John Doe
+            <img src="{{ asset('assets/images/img.jpg') }}" alt="">{{ Auth::user()->name.' '.Auth::user()->lastname }}
             <span class=" fa fa-angle-down"></span>
           </a>
           <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -21,7 +23,12 @@
               </a>
             </li>
             <li><a href="javascript:;">Help</a></li>
-            <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+            <li>
+                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out pull-right"></i>
+                  {{ __('Logout') }}
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;"> @csrf </form>
+            </li>
           </ul>
         </li>
 
@@ -55,40 +62,9 @@
                 </span>
               </a>
             </li>
-            <li>
-              <a>
-                <span class="image"><img src="{{ asset('assets/images/img.jpg') }}" alt="Profile Image" /></span>
-                <span>
-                  <span>John Smith</span>
-                  <span class="time">3 mins ago</span>
-                </span>
-                <span class="message">
-                  Film festivals used to be do-or-die moments for movie makers. They were where...
-                </span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="image"><img src="{{ asset('assets/images/img.jpg') }}" alt="Profile Image" /></span>
-                <span>
-                  <span>John Smith</span>
-                  <span class="time">3 mins ago</span>
-                </span>
-                <span class="message">
-                  Film festivals used to be do-or-die moments for movie makers. They were where...
-                </span>
-              </a>
-            </li>
-            <li>
-              <div class="text-center">
-                <a>
-                  <strong>See All Alerts</strong>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-              </div>
-            </li>
           </ul>
         </li>
+      @endguest
       </ul>
     </nav>
   </div>

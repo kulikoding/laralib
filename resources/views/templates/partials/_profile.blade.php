@@ -1,4 +1,5 @@
 <!-- menu profile quick info -->
+
 <div class="profile clearfix">
   <div class="profile_pic">
     <img src="{{ asset('assets/images/img.jpg') }}" alt="..." class="img-circle profile_img">
@@ -9,3 +10,4 @@
   </div>
 </div>
 <!-- /menu profile quick info -->
+
