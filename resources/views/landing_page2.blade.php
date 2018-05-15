@@ -39,10 +39,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="register">Register</a>
             </li>
           </ul>
         </div>
@@ -81,17 +84,6 @@
               <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
             <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
         </div>
       </div>
     </section>
