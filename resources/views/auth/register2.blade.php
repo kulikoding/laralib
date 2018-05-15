@@ -38,29 +38,36 @@
 					</span>
 				</div>
 
-				<form class="login100-form validate-form">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Full Name is Required">
-						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="full_name" placeholder="Full Name">
+				<form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
+					@csrf
+					<div class="wrap-input100 validate-input m-b-26" data-validate="First Name is Required">
+						<span class="label-input100">First Name</span>
+							<input id="name" name="name" type="text" class="input100" value="{{ old('name') }}" placeholder="First Name" required autofocus>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Last Name is Required">
+						<span class="label-input100">Last Name</span>
+							<input id="lastname" name="lastname" type="text" class="input100" value="{{ old('lastname') }}" placeholder="Last Name" required autofocus>
 						<span class="focus-input100"></span>
 					</div>
 
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "E-Mail is required">
 						<span class="label-input100">E-Mail</span>
-						<input class="input100" type="text" name="email" placeholder="E-Mail">
+							<input id="email" name="email" type="text" class="input100" value="{{ old('email') }}" placeholder="E-Mail" required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="pass" name="password" placeholder="Password">
+							<input id="password" name="password" type="password" class="input100" placeholder="Password" required>
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Confirm Password</span>
-						<input class="input100" type="pass" name="password_confirmation" placeholder="Password Confirmation">
+						<input class="input100" type="password" id="password-confirm" name="password_confirmation" placeholder="Password Confirmation" required>
 						<span class="focus-input100"></span>
 					</div>
 
@@ -73,7 +80,7 @@
 					</div>
 
 					<div class="container-login100-form-btn" style="color:#cccccc;">
-						<button class="login100-form-btn">
+						<button type="submit" class="login100-form-btn">
 							Register
 						</button>
 					</div>
