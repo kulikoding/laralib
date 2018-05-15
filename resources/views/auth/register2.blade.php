@@ -72,7 +72,7 @@
 						</div>
 					</div>
 
-					<div class="container-login100-form-btn">
+					<div class="container-login100-form-btn" style="color:#cccccc;">
 						<button class="login100-form-btn">
 							Register
 						</button>
