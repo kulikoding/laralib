@@ -56,7 +56,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h1 class="brand-heading">
-                Lara<a style="color:#00c4ff;">Lib</a>
+                Lara<a style="color:#1d809f;">Lib</a>
               </h1>
               <p class="intro-text">You can read anytime, everytime
                 <br></p>
@@ -74,10 +74,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About LaraLib</h2>
+            <h2>About Lara<a style="color:#1d809f;">Lib</h2></a>
             <p>LaraLib is a platform for somebody to learn anything and everything from your gadget.</p>
             <p>This platform based on Malang and created at April 2018</p>
-            <p>You can access digital book ( E-book ) from every year ago and writer</p>
+            <p>You can access digital book ( E-book ) from every year ago and other writer</p>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact LaraLib</h2>
+            <h2>Contact Lara<a style="color:#1d809f;">Lib</h2></a>
             <p>If you have a problem with this website, you can contact us on</p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
