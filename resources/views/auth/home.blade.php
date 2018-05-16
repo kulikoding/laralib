@@ -1,8 +1,8 @@
-@extends('templates.app')
+@extends('layouts_member.app')
 
 @section('quick_profile')
 	<div class="profile_pic">
-	    <img src="{{ asset('assets/images/img.jpg') }}" alt="..." class="img-circle profile_img">
+	    <img src="{{ asset('assets/home_member/images/img.jpg') }}" alt="..." class="img-circle profile_img">
 	</div>
 	<div class="profile_info">
 		<span>Welcome,</span>
@@ -11,7 +11,7 @@
 @endsection
 
 @section('sidebar')
-	  
+
 	  <div class="menu_section">
 	    <h3>General</h3>
 	    <ul class="nav side-menu">

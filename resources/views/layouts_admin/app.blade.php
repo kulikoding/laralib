@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  @include('templates.partials._head')
+  @include('layouts_admin.partials._head')
 
   <body class="nav-md">
     <div class="container body">
@@ -14,7 +14,7 @@
 
             <div class="clearfix"></div>
 
-            {{-- @include('templates.partials._profile') --}}
+            {{-- @include('layouts_admin.partials._profile') --}}
             <!-- menu profile quick info -->
               <div class="profile clearfix">
                 @yield('quick_profile')
@@ -24,18 +24,18 @@
 
             <br />
 
-            {{-- @include('templates.partials._sidebar') --}}
+            {{-- @include('layouts_admin.partials._sidebar') --}}
             <!-- sidebar -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               @yield('sidebar')
             </div>
             <!-- sidebar -->
 
-            @include('templates.partials._footer_menu')
+            @include('layouts_admin.partials._footer_menu')
           </div>
         </div>
 
-        @include('templates.partials._top_navigation')
+        @include('layouts_admin.partials._top_navigation')
 
         <!-- page content -->
         <div class="right_col" role="main">
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    @include('templates.partials._scripts')
+    @include('layouts_admin.partials._scripts')
 
   </body>
 </html>

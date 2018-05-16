@@ -2,7 +2,7 @@
 
 <div class="profile clearfix">
   <div class="profile_pic">
-    <img src="{{ asset('assets/images/img.jpg') }}" alt="..." class="img-circle profile_img">
+    <img src="{{ asset('assets/home_admin/images/img.jpg') }}" alt="..." class="img-circle profile_img">
   </div>
   <div class="profile_info">
     <span>Welcome,</span>

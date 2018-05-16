@@ -71,19 +71,17 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="flex-sb-m w-full p-b-30">
+					<div class="" style="color:#cccccc;">
+						<button type="submit" class="login100-form-btn">
+							Register
+						</button>
+					</div>
+
 						<div>
 							<a href="{{route('login')}}" class="txt1">
 								Have an Account ? Login
 							</a>
 						</div>
-					</div>
-
-					<div class="container-login100-form-btn" style="color:#cccccc;">
-						<button type="submit" class="login100-form-btn">
-							Register
-						</button>
-					</div>
 				</form>
 			</div>
 		</div>

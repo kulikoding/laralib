@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 
   <head>
 
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Laralib - read anytime, everytime </title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/landing_page2/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="register">Register Now !</a>
+        <a class="navbar-brand js-scroll-trigger" href="{{ route('register') }}">Register Now !</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -42,7 +42,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login">Login</a>
+              <a class="nav-link js-scroll-trigger" href="{{ route('login') }}">Login</a>
             </li>
           </ul>
         </div>
@@ -55,8 +55,10 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">LaraLib</h1>
-              <p class="intro-text">You can access anytime, everytime
+              <h1 class="brand-heading">
+                Lara<a style="color:#00c4ff;">Lib</a>
+              </h1>
+              <p class="intro-text">You can read anytime, everytime
                 <br></p>
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
@@ -116,7 +118,7 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p>Copyright &copy; LaraLib 2018</p>
+        <p>Copyright &copy; <a href="{{ url('admin') }}"> LaraLib </a> 2018</p>
       </div>
     </footer>
 

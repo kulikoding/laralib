@@ -1,8 +1,8 @@
-@extends('templates.app')
+@extends('layouts_admin.app')
 
 @section('quick_profile')
 	<div class="profile_pic">
-	    <img src="{{ asset('assets/images/img.jpg') }}" alt="..." class="img-circle profile_img">
+	    <img src="{{ asset('assets/home_admin/images/img.jpg') }}" alt="..." class="img-circle profile_img">
 	</div>
 	<div class="profile_info">
 		<span>Welcome,</span>
@@ -68,5 +68,5 @@
 @endsection
 
 @section('content')
-<h4> You're Login as Admin </h4>
+	<h4> You're Login as Super Admin </h4>
 @endsection

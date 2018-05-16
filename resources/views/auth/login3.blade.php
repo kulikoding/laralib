@@ -65,9 +65,6 @@
 								Forgot Password?
 							</a>
 						</div>
-
-						<div>
-						</div>
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -76,10 +73,10 @@
 						</button>
 					</div>
 					<div>
-					<a href="{{ route('register') }}" class="txt1">
+						<a href="{{ route('register') }}" class="txt1">
 							<br>Didn't have account ? Register
-					</a>
-				</div>
+						</a>
+					</div>
 				</form>
 			</div>
 		</div>
