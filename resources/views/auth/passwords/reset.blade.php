@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login V15</title>
+    <title>Reset Password</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="{{ asset('assets/login_page2/   images/icons/favicon.ico') }}"/>
@@ -100,4 +100,3 @@
 
 </body>
 </html>
-
